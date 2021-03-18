@@ -20,6 +20,10 @@ mongoose
     console.log('DB CONNECTED')
   })
 
+app.get('/test', (req, res) => {
+  res.send("App is working")
+})
+
 //Middlewares
 app.use(cors())
 app.use(bodyParser.json())
